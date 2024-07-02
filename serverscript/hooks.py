@@ -133,23 +133,29 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"serverscript.tasks.all"
-# 	],
-# 	"daily": [
-# 		"serverscript.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"serverscript.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"serverscript.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"serverscript.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"serverscript.tasks.all"
+	# ],
+	# "daily": [
+	# 	"serverscript.tasks.daily"
+	# ],
+	# "hourly": [
+	# 	"serverscript.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"serverscript.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"serverscript.tasks.monthly"
+	# ],
+    "cron": {
+        "*  * * * *": [
+            # "serverscript.serverscript.doctype.myscheduler.myscheduler.update_counter"
+			"serverscript.serverscript.doctype.myscheduler.myscheduler.update_counter"
+        ]
+    }
+}
 
 # Testing
 # -------
