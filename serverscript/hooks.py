@@ -122,7 +122,7 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-doctype_js = {"doctype" : "serverscript/customization.item_sum.js"}
+# doctype_js = {"Item" : "public/js/item_sum.js"}
 
 doc_events = {
 	# "*": {

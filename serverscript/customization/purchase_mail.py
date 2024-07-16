@@ -1,6 +1,8 @@
 # purchase_order.py
 import frappe
 def send_notification_email(doc, method):
+        frappe.logger().info("Message of frappe.logger sent successfully")
+         frappe.logger().info(f"send_notification_email called for Purchase Order: {doc.name}")
     supplier_email = "mrcodewick@gmail.com"
     if supplier_email:
         subject = f"Purchase Order {doc.name} Submitted"
